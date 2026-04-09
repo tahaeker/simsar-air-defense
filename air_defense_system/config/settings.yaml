@@ -1,0 +1,27 @@
+# Genel Ayarlar
+system:
+  name: "SIMSAR Air Defense System"
+  version: "1.0.0"
+  debug: false
+  log_level: "INFO"
+
+camera:
+  source: 0
+  width: 1280
+  height: 720
+  fps: 30
+
+detection:
+  model_path: "models/yolo_best.pt"
+  confidence_threshold: 0.5
+  nms_threshold: 0.4
+
+pid:
+  kp: 1.0
+  ki: 0.1
+  kd: 0.05
+
+serial:
+  port: "COM3"
+  baudrate: 115200
+  timeout: 1.0

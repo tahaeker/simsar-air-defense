@@ -1,0 +1,25 @@
+# Renk → IFF Kuralları
+# HSV renk aralıkları ile dost/düşman tanımlama
+
+iff_rules:
+  friendly:
+    - name: "mavi"
+      hsv_lower: [100, 50, 50]
+      hsv_upper: [130, 255, 255]
+    - name: "yeşil"
+      hsv_lower: [35, 50, 50]
+      hsv_upper: [85, 255, 255]
+
+  hostile:
+    - name: "kırmızı_alt"
+      hsv_lower: [0, 50, 50]
+      hsv_upper: [10, 255, 255]
+    - name: "kırmızı_üst"
+      hsv_lower: [170, 50, 50]
+      hsv_upper: [180, 255, 255]
+
+  unknown:
+    - name: "tanımsız"
+      description: "Hiçbir kurala uymayan renkler"
+
+default_classification: "unknown"

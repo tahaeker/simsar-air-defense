@@ -1,0 +1,42 @@
+# Cisim Türleri ve Özellikleri
+
+targets:
+  f16:
+    class_id: 0
+    name: "F-16"
+    threat_level: "high"
+    min_speed_kmh: 200
+    max_altitude_m: 15000
+    priority: 1
+
+  drone:
+    class_id: 1
+    name: "Drone"
+    threat_level: "medium"
+    min_speed_kmh: 0
+    max_altitude_m: 5000
+    priority: 2
+
+  bird:
+    class_id: 2
+    name: "Kuş"
+    threat_level: "none"
+    min_speed_kmh: 0
+    max_altitude_m: 3000
+    priority: 5
+
+  helicopter:
+    class_id: 3
+    name: "Helikopter"
+    threat_level: "high"
+    min_speed_kmh: 0
+    max_altitude_m: 6000
+    priority: 1
+
+  balloon:
+    class_id: 4
+    name: "Balon"
+    threat_level: "low"
+    min_speed_kmh: 0
+    max_altitude_m: 2000
+    priority: 4
